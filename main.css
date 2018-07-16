@@ -1,0 +1,38 @@
+body {
+  background-image: url(img/ep_naturalwhite.png);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.wrapper {
+  max-width: 650px;
+  margin: 0 auto;
+}
+ul.accordion {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  padding: 0;
+}
+ul.accordion li {
+  width: 60px;
+  overflow: hidden;
+  padding: 1px 1px 0;
+  cursor: pointer;
+  display: block;
+  transition: all 1.5s;
+}
+ul.accordion img {
+  width: 400px;
+}
+ul.accordion li:hover {
+  width: 400px;
+  transition: all 1s;
+  box-shadow: 1px 1px 15px aquamarine;
+}
+ul.accordion li:nth-child(4) {
+  width: 400px;
+}
+ul.accordion:hover li:nth-child(4) {
+  width: 60px;
+}
